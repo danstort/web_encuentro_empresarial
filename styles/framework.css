@@ -1,0 +1,36 @@
+:root {
+    --base: 98; /* Usamos 100% como base */
+    --tbase: 100vw; /* Usamos el ancho de la ventana como base */
+    --tcolumna: calc(var(--tbase) / 12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%; /* Ajustamos el ancho al 100% del contenedor */
+    margin: 0 auto;
+}
+
+.row {
+    clear: both;
+}
+
+.col {
+    float: left;
+    width: var(--tcolumna);
+    /*border: 1px solid rgb(0, 0, 0);*/
+}
+
+.col.span2 { width: calc(var(--tcolumna) * 2); }
+.col.span3 { width: calc(var(--tcolumna) * 3); }
+.col.span4 { width: calc(var(--tcolumna) * 4); }
+.col.span5 { width: calc(var(--tcolumna) * 5); }
+.col.span6 { width: calc(var(--tcolumna) * 6); }
+.col.span7 { width: calc(var(--tcolumna) * 7); }
+.col.span8 { width: calc(var(--tcolumna) * 8); }
+.col.span9 { width: calc(var(--tcolumna) * 9); }
+.col.span10 { width: calc(var(--tcolumna) * 10); }
+.col.span11 { width: calc(var(--tcolumna) * 11); }
+.col.span12 { width: calc(var(--tcolumna) * 12); }
