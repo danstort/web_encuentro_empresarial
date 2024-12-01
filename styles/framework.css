@@ -1,5 +1,5 @@
 :root {
-    --base: 98; /* Usamos 100% como base */
+    --base: 100; /* Usamos 100% como base */
     --tbase: 100vw; /* Usamos el ancho de la ventana como base */
     --tcolumna: calc(var(--tbase) / 12);
 }
@@ -11,6 +11,8 @@
 .wrapper {
     width: 100%; /* Ajustamos el ancho al 100% del contenedor */
     margin: 0 auto;
+    margin-top: 80px; /* Desplaza el contenido para compensar la altura del menú */
+
 }
 
 .row {
@@ -20,7 +22,7 @@
 .col {
     float: left;
     width: var(--tcolumna);
-    /*border: 1px solid rgb(0, 0, 0);*/
+   
 }
 
 .col.span2 { width: calc(var(--tcolumna) * 2); }
