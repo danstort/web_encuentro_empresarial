@@ -1,3 +1,9 @@
+body {
+   
+  margin: 0;
+  background-color: #f4e0f2;
+    
+}
 ul {
     list-style-type: none; /* Elimina los puntos predeterminados */
     padding: 0; /* Elimina el padding */
@@ -5,9 +11,8 @@ ul {
     display: flex; /* Usa un contenedor flexbox */
     justify-content: center; /* Centra horizontalmente */
     padding: 5px;
+    
 }
-
-
 
 li a {
     display: block;
@@ -24,11 +29,13 @@ li a:hover {
 
 
 #logo {
-
-    width: 95%;
-    text-align: center;
-    
-    
+  max-width: 107px; /* Tamaño máximo del logo */
+  min-width: 50px;  /* Tamaño mínimo del logo */
+  width: auto;      /* Ajuste automático según el contenedor */
+  height: auto;     /* Mantener proporciones */
+  object-fit: contain; /* Prevenir deformaciones */
+  display: block;   /* Asegurarse de que es un bloque */
+  margin: 0 auto;   /* Centrar el logo */
 }
 
 #logo:hover{
@@ -39,10 +46,18 @@ li a:hover {
 #barra_de_nav{
     position: fixed; /* Fija el elemento en la pantalla */
     top: 0; /* Posición desde la parte superior */
+    
     left: 0; /* Posición desde la izquierda */
     background-color: #c3a2c1; /* Color de fondo */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
     
+}
+
+#barra_de_nav .col.span1 {
+  display: flex;          /* Flexbox para centrar */
+  align-items: center;    /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
 }
 
 footer{
@@ -59,7 +74,62 @@ footer{
     width: calc(var(--tcolumna) * 6);
 }
 
-/* */
+
+
+.barra-footer {
+  background-color: #f8f9fa;
+  padding: 15px;
+  left: 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  display: flex; /* Flexbox para disposición en fila */
+  justify-content: space-between; /* Espaciado entre los elementos */
+  align-items: center; /* Centrar verticalmente los elementos */
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-links {
+  display: flex; /* Flexbox para enlaces */
+  gap: 15px; /* Espaciado entre los enlaces */
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copia {
+  color: #6c757d;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  #logo {
+      max-width: 80px; /* Reducir el tamaño máximo */
+      min-width: 40px; /* Reducir el tamaño mínimo */
+  }
+  #barra_de_nav .col.span1 {
+      justify-content: flex-start; /* Logo a la izquierda */
+  }
+  .col {
+    float: none; /* Quita el efecto flotante */
+    width: 100%; /* Haz que ocupen todo el ancho disponible */
+}
+}
+
+
+
+
+/*Código Slider W3S */
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -144,7 +214,6 @@ footer{
   animation-duration: 1.5s;
   
 }
-
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
