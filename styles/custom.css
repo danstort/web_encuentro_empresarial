@@ -1,7 +1,7 @@
 body {
    
   margin: 0;
-  background-color: #f4e0f2;
+  background-color: #faf0f9;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     
@@ -29,6 +29,19 @@ li a:hover {
     background-color: #111;
 }
 
+.texto{
+    text-align: justify;
+    font-size: 20px;
+    color: #111;
+    padding: 3% 10%;
+}
+
+.texto h2{
+    text-align: center;
+    font-size: 30px;
+    color: #111;
+    padding: 3% 10%;
+}
 
 #logo {
   max-width: 107px; /* Tamaño máximo del logo */
@@ -50,7 +63,7 @@ li a:hover {
     top: 0; /* Posición desde la parte superior */
     
     left: 0; /* Posición desde la izquierda */
-    background-color: #c3a2c1; /* Color de fondo */
+    background-color: #c3a2c1; /* Color de fondo #c3a2c1 */
     z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
 
     
@@ -63,6 +76,10 @@ li a:hover {
   justify-content: center; /* Centrar horizontalmente */
 }
 
+.elementos-body{
+    padding-top: 6%; 
+    
+}
 footer{
     background-color: #c3a2c1;
     color: white;
@@ -180,6 +197,84 @@ footer{
 .btn-submit:hover {
   background-color: #0056b3;
 }
+
+.about-us, .our-mission, .our-values, .team {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h1, .our-mission h2, .our-values h2, .team h2 {
+  text-align: justify;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.about-us p, .our-mission p, .team p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+.our-values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.our-values ul li {
+  margin: 10px 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.our-values ul li strong {
+  color: #007bff;
+}
+
+.services-intro, .services-list, .additional-services {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-intro h1, .services-list h2, .additional-services h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.services-intro p, .services-list p, .additional-services p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+.services-list, .additional-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.services-list .col, .additional-services .col {
+  flex: 1 1 calc(50% - 20px);
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+
 @media (max-width: 768px) {
   #logo {
       max-width: 80px; /* Reducir el tamaño máximo */
